@@ -1,0 +1,253 @@
+.contenedor {
+	max-width: 900px;
+	margin: auto;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+header {
+	background: yellow;
+}
+
+header h1 {
+	font-size: 80px;
+}
+
+header h2 {
+	font-size: 40px;
+}
+
+.textos article {
+	display: inline-block;
+	width: 49%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.textos article .solo-mobile {
+	display: none;
+	background: red;
+}
+
+.solo-mobile {
+	display: none;
+}
+
+@media (max-width: 600px){
+	.textos article {
+		width: 100%;
+		display: block;
+	}
+
+	.textos article.solo-desktop {
+	display: none;
+	}
+
+	.textos article .solo-mobile {
+		display: block;
+	}
+
+	.solo-desktop {
+		display: none;
+	}
+
+	.solo-mobile {
+		display: inline-block;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	header h1 {
+		font-size: 60px;
+	}
+
+	header {
+		background: pink;
+	}
+}
+
+@media (max-width: 480px){
+	header h1 {
+		font-size: 40px;
+		color: white;
+	}
+
+	header {
+		background: blue;
+	}
+}
+
+section {
+	padding: 100px 0;
+}
+
+.boton {
+	display: inline-block;
+	background: red;	
+	color: white;
+	padding: 10px 30px;
+	transition: 2s;
+}
+
+.boton:hover {
+	background: blue;
+	/*transform: scale(1.2);*/
+	transform: scale(2) rotate(15deg);
+}
+
+.icon {
+	float: left;
+	font-size: 40px;
+	transition: 2s;
+	color: grey;
+}
+
+.iconos1 {
+	margin-right: 20px;
+
+}
+
+.iconos1:hover {
+	color: #3b5998;
+}
+
+.iconos2 {
+	margin-right: 20px;
+}
+
+.iconos2:hover {
+	color: #55acee;
+}
+
+.iconos3 {
+	margin-right: 20px;
+}
+
+.iconos3:hover {
+	color: #125688;
+}
+
+.icon ul li {
+	display: inline-block;
+}
+
+.icon:hover {
+	transform: scale(2);
+}
+
+@keyframes cambiar{
+	from{
+		background: red;
+	}
+
+	to{
+		background: blue;
+	}
+}
+
+@keyframes cambiar2 {
+	0%{
+		background: red;
+	}
+
+	20%{
+		background: yellow;
+		transform: scale(2) translate(400px, 100px);
+	}
+	
+	40%{
+		background: green;
+		transform: scale(0.5) translate(100px, 200px);
+	}
+
+	60%{
+		background: blue;
+		transform: scale(1) translate(50px, 180px);
+	}
+
+	80%{
+		background: violet;
+		transform: scale(2,3);
+	}
+
+	100%{
+		background: red;
+		transform: scale(1);
+	}
+}
+
+.circulo {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+	display: inline-block;
+	animation-name: cambiar2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes cambiar3 {
+	from{
+		transform: rotate(0deg);
+	} 
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.gear {
+	display: inline-block;
+	position: absolute;
+	animation-timing-function: linear;
+	animation-name: cambiar3;
+	animation-duration: 7s;
+	animation-iteration-count: infinite;
+}
+
+.gear1 {
+	font-size: 40px; 
+	left: 470px;
+	top: 18px;  
+} 
+
+.gear2 {
+	font-size: 80px;
+	left: 500px;
+	top: 20px;
+	animation-direction: reverse;  
+} 
+
+.gear3 {
+	font-size: 120px;
+	left: 385px;
+	top: 10px; 
+} 
+
+.gear4 {
+	font-size: 160px;
+	left: 600px;
+	top: 15px; 
+	animation-direction: reverse;
+} 
+
+.gear5 {
+	font-size: 200px;
+	left: 240px;
+	top: 20px; 
+} 
+
+.animacion {
+	position: relative;
+	max-width: 300px;
+	margin: auto;
+}
+
